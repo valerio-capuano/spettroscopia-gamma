@@ -38,7 +38,7 @@
             \end{enumerate}
 
         \subsection*{Cenni teorici}
-            La spettroscopia gamma permette di misurare l'energia dei fotoni emessi in seguito ai decadimenti di nuclei eccitati. L'interazione di questa radiazione con la materia avviene, principalmente, tramite tre processi, che permettono la rivelazione delle particelle cariche secondarie che conservano l'informazione sull'energia: effetto fotoelettrico, effetto compton e produzione di coppie elettrone-positrone.
+            La spettroscopia gamma permette di misurare l'energia dei fotoni emessi in seguito ai decadimenti di nuclei eccitati. L'interazione di questa radiazione con la materia avviene, principalmente, tramite tre processi, che permettono la rivelazione delle particelle cariche secondarie che conservano l'informazione sull'energia: effetto fotoelettrico, effetto Compton e produzione di coppie elettrone-positrone.
 
             I rivelatori a semiconduttore, come quelli al germanio iperpuro (HpGe), permettono di studiare questo tipo di spettro con una risoluzione energetica eccellente, principalmente grazie al basso valore di energia media per produzione di coppie elettrone-lacuna nel loro volume attivo, per cui sono ideali per distinguere picchi energetici anche molto vicini tra loro, in termini di energia.
 
@@ -498,7 +498,7 @@
                     {
                         $
                         \begin{array}{cc}
-                            (canali\:/\:\si{\kilo\electronvolt})&(canali)\\
+                            (\si{\kilo\electronvolt}\:/\:canali)&(\si{\kilo\electronvolt})\\
                             \toprule
                             \beta_0       & \alpha_0      \\
                             \midrule
@@ -562,7 +562,7 @@
         \section{La risoluzione}
             Una volta effettuata la calibrazione, è possibile convertire i risultati utili del fit in canali per ottenere i corrispondenti valori di energia per ciascun picco, quindi calcolarne le risoluzioni per studiarne l'andamento mediante un best fit con la relazione \eqref{for:fit_risoluzione}.
 
-            Per farlo, è possibile sfruttare dei codici che sono in grado di convertire i risultati 
+            Per farlo, è possibile sfruttare dei codici che sono in grado di convertire i risultati.
 
             \subsection*{Il funzionamento del codice}
             Questa procedura di analisi dati ha richiesto l'utilizzo di un codice:
@@ -1019,8 +1019,8 @@
 
             Infine, ha significato indicare la risoluzione percentuale in canali dei picchi del BaF (senza soglia impostata), calcolata come il rapporto tra $FWHM$ e centroide $X$:
             \begin{align*}
-                &R_1=9.77 \% \\
-                &R_2=9.76 \%
+                &R_1=9.77\:\% \\
+                &R_2=9.76\:\%
             \end{align*}
 
 
@@ -1066,11 +1066,11 @@
             \end{itemize}
             Il coefficiente di correlazione lineare (calcolato dallo stesso script in python) pari a $r=0.995128$ è un'ottima conferma dell'andamento lineare del drift. Per cui, vale la pena indicare anche i parametri di fit lineare, corrispondenti alle modifiche, per il surriscaldamento, di zero drift e gain drift ai coefficienti della calibrazione in energia del rivelatore al germanio, rispettivamente, $\Delta\alpha$ e $\Delta\beta$:
             \begin{equation*}
-                \boxed{\Delta\alpha=(0.167\pm0.062)\si{\kilo\electronvolt}\quad\Delta\beta=(2.824\pm0.045)\cdot10^{-3}\si{\kilo\electronvolt}/canali}
+                \boxed{\Delta\alpha=(0.167\pm0.062)\:\si{\kilo\electronvolt}\quad\Delta\beta=(2.824\pm0.045)\cdot10^{-3}\:\si{\kilo\electronvolt}/canali}
             \end{equation*}
 
         \subsection*{Il rumore elettronico}
-            La figura \ref{fig:confronto_rumore} mostra il confronto tra la radice del parametro $a$ calcolato dal best fit caratteristico per le risoluzioni e la $FWHM$ del picco del pulser. Il loro confronto è rilevante perché entrambi quantificano il contributo del rumore elettronico al peggioramento della risoluzione. Nonostante siano dello stesso ordine di grandezza, non sono compatibili.
+            La figura \ref{fig:confronto_rumore} mostra il confronto tra la radice del parametro $a$ calcolato dal best fit caratteristico per le risoluzioni e la $FWHM$ del picco del pulser. Il loro confronto è rilevante perché entrambi quantificano il contributo del rumore elettronico al peggioramento della risoluzione. Nonostante siano dello stesso ordine di grandezza, non sono perfettamente compatibili.
             \begin{figure}[h!]
                 \centering
                 \caption{Confronto FWHM pulser e $\sqrt{a}$}
@@ -1081,10 +1081,10 @@
         \subsection*{L'efficienza}
             Per quanto riguarda l'efficienza in percentuale dei picchi nell'HpGe, oltre alla verifica della formula parametrica caratteristica, è possibile confrontarne il valore per un picco del cobalto-60 ad alto rateo con quello dello standard NaI, dato che in quella misura la sorgente è stata posta appositamente a $\SI{25}{\centi\meter}$ dal rivelatore. A tal proposito, per il picco ad alta energia:
             \begin{align*}
-                &\epsilon_{NaI}=0.2 \% \\
-                &\epsilon_{mis}=0.01212 \%
+                &\epsilon_{NaI}=0.2\:\% \\
+                &\epsilon_{mis}=0.01212\:\%
             \end{align*}
-            Cioè l'efficienza misurata è pari al $\boxed{6 \%}$ di quella dello standard, e questo indica il prezzo da pagare per avere una risoluzione eccellente: il germanio ha un numero atomico ben inferiore di quello efficace dello ioduro di sodio e assorbe meno i fotoni. Ad ogni modo, è un valore di efficienza relativa estremamente realistico, trattandosi di un rivelatore per scopi didattici.
+            Cioè l'efficienza misurata è pari al $\boxed{6\:\%}$ di quella dello standard, e questo indica il prezzo da pagare per avere una risoluzione eccellente: il germanio ha un numero atomico ben inferiore di quello efficace dello ioduro di sodio e assorbe meno i fotoni. Ad ogni modo, è un valore di efficienza relativa estremamente realistico, trattandosi di un rivelatore per scopi didattici.
 
         \subsection*{La coincidenza}
             Infine, la coincidenza dell'emissione di due gamma da parte del cobalto-60 può essere verificata con due confronti rispetto agli ultimi fit della tabella \ref{tab:fit_coincidenza}:
