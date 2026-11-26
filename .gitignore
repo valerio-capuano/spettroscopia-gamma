@@ -1,0 +1,14 @@
+# File di sistema macOS
+.DS_Store
+
+# File temporanei di LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Cache di Python
+__pycache__/
